@@ -16,33 +16,12 @@ from sklearn.metrics.cluster import adjusted_mutual_info_score
 from sklearn.metrics.cluster import adjusted_rand_score
 from sklearn.preprocessing import StandardScaler
 
+
 sns.set_context('poster')
 sns.set_color_codes()
 plot_kwds = {'alpha': 0.25, 's': 80, 'linewidths': 0}
 
 load_dotenv()
-
-
-def assign_frequency(frequency):
-    """
-    Fonction permettant d'attribuer un score de fréquence
-
-    Entrée :
-    - fréquence - commande passée, int
-
-    Sortie :
-    - F - score de fréquence, int
-
-    """
-
-    if frequency >= 7:
-        return 4
-    elif frequency >= 4:
-        return 3
-    elif frequency >= 2:
-        return 2
-    else:
-        return 1
 
 
 def convert_to_dt(dataframe, columns, dt_format=None):
