@@ -1,0 +1,13 @@
+pandas
+pandas-profiling
+scikit-learn
+kmodes
+kneed
+matplotlib
+seaborn
+yellowbrick
+numpy
+tqdm
+isort
+autopep8
+squarify
